@@ -9,7 +9,7 @@ import { Context } from "./context";
 // Create a new instance of Keycloak
 const keycloak = new Keycloak({
   "realm": "master",
-  "keycloak_base_url": "https://auth.redsevenstudios.com",
+  "keycloak_base_url": "http://auth.local",
   "client_id": "plugin-keycloak-test"
 })
 
