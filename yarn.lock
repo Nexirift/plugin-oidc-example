@@ -116,10 +116,10 @@
   resolved "https://registry.yarnpkg.com/@kamilkisiela/fast-url-parser/-/fast-url-parser-1.1.4.tgz#9d68877a489107411b953c54ea65d0658b515809"
   integrity sha512-gbkePEBupNydxCelHCESvFSFM8XPh1Zs/OAVRW/rKpEqPAl5PbOM90Si8mv9bvnR53uPD2s/FiRxdvSejpRJew==
 
-"@nexirift/plugin-keycloak@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@nexirift/plugin-keycloak/-/plugin-keycloak-1.1.3.tgz#2d63adee5820e79e9d4da3a174799970c50b8de2"
-  integrity sha512-YK+1GzbA3eCy9fsMYerLWCARjUbARP683JCwg10INe9qbrEXDwOHD+doGYvIw9W+It0LzRLv1cY4tH67QdV0mg==
+"@nexirift/plugin-keycloak@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@nexirift/plugin-keycloak/-/plugin-keycloak-1.1.4.tgz#bb07456b740eb023b39edb9388205413c4e8605e"
+  integrity sha512-M6ivw9vrgeMMnQnmwQ4ZPoMFLfEv38N7D6uV8Q4NK/wAfXePTc+wo34sKAbzFFPy53QDz8ukeCEJgPDzAmBzww==
   dependencies:
     graphql-yoga "^5.1.1"
     keycloak-backend "^5.0.0"

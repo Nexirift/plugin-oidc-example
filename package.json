@@ -11,7 +11,7 @@
 	},
 	"keywords": [],
 	"dependencies": {
-		"@nexirift/plugin-keycloak": "^1.1.3",
+		"@nexirift/plugin-keycloak": "^1.1.4",
 		"@pothos/core": "^3.41.0",
 		"@types/node": "^20.11.24",
 		"dotenv": "^16.4.5",
