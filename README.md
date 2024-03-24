@@ -6,7 +6,9 @@ An example [GraphQL Yoga](https://github.com/dotansimha/graphql-yoga) project to
 
 ### Prerequisites
 
-- [Redis](https://redis.io)
+- [KeyDB](https://docs.keydb.dev/docs)
+   - Or a Redis compatible client, we no longer recommend official Redis.
+   - If you would like to know why we don't suggest it, read the comments [here](https://github.com/redis/redis/pull/13157).
 - [Keycloak](https://www.keycloak.org)
 
 ### Instructions
