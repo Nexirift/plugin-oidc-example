@@ -1,8 +1,7 @@
 import { createYoga } from 'graphql-yoga';
 import { createServer } from 'node:http';
 import SchemaBuilder from '@pothos/core';
-import { Keycloak } from 'keycloak-backend';
-import { useKeycloak } from '@nexirift/plugin-keycloak';
+import { Keycloak, KeycloakToken, useKeycloak } from '@nexirift/plugin-keycloak';
 import { redisClient } from './redis';
 import { Context } from './context';
 
@@ -26,6 +25,15 @@ builder.queryType({
 		hello: t.string({
 			resolve: (_root, _args, ctx: Context) =>
 				`Hello ${ctx?.keycloak?.preferred_username || 'Anonymous'}`
+		}),
+		checkScope: t.boolean({
+			resolve: (_root, _args, ctx: Context) => {
+				if (!ctx.keycloak) {
+					return false;
+				}
+
+				return (new KeycloakToken(ctx.keycloak).hasScopes(["test:scope"]))
+			}
 		})
 	})
 });

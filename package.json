@@ -11,13 +11,12 @@
 	},
 	"keywords": [],
 	"dependencies": {
-		"@nexirift/plugin-keycloak": "^1.1.4",
+		"@nexirift/plugin-keycloak": "^1.1.5",
 		"@pothos/core": "^3.41.0",
 		"@types/node": "^20.11.24",
 		"dotenv": "^16.4.5",
 		"graphql": "^16.8.1",
 		"graphql-yoga": "^5.1.1",
-		"keycloak-backend": "^5.0.0",
 		"redis": "^4.6.13"
 	},
 	"devDependencies": {

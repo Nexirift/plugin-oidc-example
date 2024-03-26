@@ -1,4 +1,4 @@
-import { ITokenContent } from "keycloak-backend";
+import { KeycloakToken } from "@nexirift/plugin-keycloak";
 
 /**
  * Represents the context object used in the application.
@@ -15,5 +15,5 @@ export interface Context {
     /**
      * The Keycloak token content.
      */
-    keycloak: ITokenContent;
+    keycloak: KeycloakToken;
 }
