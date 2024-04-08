@@ -1,7 +1,7 @@
 {
-	"name": "plugin-keycloak-example",
+	"name": "plugin-oidc-example",
 	"version": "1.0.0",
-	"description": "An example GraphQL Yoga project to get you started with plugin-keycloak.",
+	"description": "An example GraphQL Yoga project to get you started with plugin-oidc.",
 	"author": "Nexirift",
 	"license": "MIT",
 	"main": "server.ts",
@@ -11,7 +11,7 @@
 	},
 	"keywords": [],
 	"dependencies": {
-		"@nexirift/plugin-keycloak": "^1.1.5",
+		"@nexirift/plugin-oidc": "link:@nexirift/plugin-oidc",
 		"@pothos/core": "^3.41.0",
 		"@types/node": "^20.11.24",
 		"dotenv": "^16.4.5",
