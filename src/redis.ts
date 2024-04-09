@@ -5,4 +5,4 @@ import { createClient } from 'redis';
 export const redisClient = createClient();
 
 // Listen for any errors that occur in the Redis client
-redisClient.on('error', err => console.log('Redis Client Error', err));
+redisClient.on('error', (err) => console.log('Redis Client Error', err));

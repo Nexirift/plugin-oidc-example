@@ -1,9 +1,9 @@
+import { OIDC, OIDCToken, useOIDC } from '@nexirift/plugin-oidc';
+import SchemaBuilder from '@pothos/core';
 import { createYoga } from 'graphql-yoga';
 import { createServer } from 'node:http';
-import SchemaBuilder from '@pothos/core';
-import { redisClient } from './redis';
 import { Context } from './context';
-import { OIDC, OIDCToken, useOIDC } from '@nexirift/plugin-oidc';
+import { redisClient } from './redis';
 
 require('dotenv').config();
 
