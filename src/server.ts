@@ -60,12 +60,23 @@ const yoga = createYoga({
 	]
 });
 
-// Create a new server using the GraphQL Yoga instance
-const server = createServer(yoga);
+export async function startServer() {
+	const server = Bun.serve({
+		async fetch(req) {
+			return yoga.fetch(req);
+		}
+	});
 
-// Start the server and listen on a port defined by .env
-server.listen(process.env.PORT, async () => {
 	await redisClient.connect();
 	console.log('📊 GraphQL Yoga OIDC Plugin Example');
-	console.log(`🚀 Serving at http://localhost:${process.env.PORT}/graphql`);
-});
+	console.log(
+		`🚀 Serving at ${new URL(
+			yoga.graphqlEndpoint,
+			`http://${server.hostname}:${server.port}`
+		)}`
+	);
+}
+
+if (process.env.NODE_ENV !== 'test') {
+	startServer();
+}

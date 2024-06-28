@@ -1,25 +1,26 @@
 {
-	"name": "plugin-oidc-example",
-	"version": "1.0.0",
-	"description": "An example GraphQL Yoga project to get you started with plugin-oidc.",
-	"author": "Nexirift",
-	"license": "MIT",
-	"main": "server.ts",
-	"scripts": {
-		"dev": "bun --watch src/server.ts",
-		"start": "bun src/server.ts"
-	},
-	"keywords": [],
-	"dependencies": {
-		"@nexirift/plugin-oidc": "^1.0.2",
-		"@pothos/core": "^3.41.2",
-		"@types/node": "^20.14.9",
-		"dotenv": "^16.4.5",
-		"graphql": "^16.9.0",
-		"graphql-yoga": "^5.4.0",
-		"redis": "^4.6.14"
-	},
-	"devDependencies": {
-		"typescript": "^5.5.2"
-	}
+  "name": "plugin-oidc-example",
+  "version": "1.0.0",
+  "description": "An example GraphQL Yoga project to get you started with plugin-oidc.",
+  "author": "Nexirift",
+  "license": "MIT",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "start": "bun src/server.ts"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@nexirift/plugin-oidc": "^1.0.2",
+    "@pothos/core": "^3.41.2",
+    "@types/node": "^20.14.9",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.9.0",
+    "graphql-yoga": "^5.4.0",
+    "redis": "^4.6.14"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.6",
+    "typescript": "^5.5.2"
+  }
 }
