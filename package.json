@@ -6,21 +6,20 @@
 	"license": "MIT",
 	"main": "server.ts",
 	"scripts": {
-		"dev": "ts-node-dev src/server.ts",
-		"start": "ts-node src/server.ts"
+		"dev": "bun --watch src/server.ts",
+		"start": "bun src/server.ts"
 	},
 	"keywords": [],
 	"dependencies": {
-		"@nexirift/plugin-oidc": "link:@nexirift/plugin-oidc",
-		"@pothos/core": "^3.41.0",
-		"@types/node": "^20.11.24",
+		"@nexirift/plugin-oidc": "^1.0.1",
+		"@pothos/core": "^3.41.2",
+		"@types/node": "^20.14.9",
 		"dotenv": "^16.4.5",
-		"graphql": "^16.8.1",
-		"graphql-yoga": "^5.1.1",
-		"redis": "^4.6.13"
+		"graphql": "^16.9.0",
+		"graphql-yoga": "^5.4.0",
+		"redis": "^4.6.14"
 	},
 	"devDependencies": {
-		"ts-node-dev": "^2.0.0",
-		"typescript": "^5.3.3"
+		"typescript": "^5.5.2"
 	}
 }
