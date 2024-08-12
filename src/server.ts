@@ -16,8 +16,11 @@ const oidc = new OIDC({
 
 // Create a new instance of SchemaBuilder
 const builder = new SchemaBuilder<{
+	Defaults: 'v3';
 	Context: Context;
-}>({});
+}>({
+	defaults: 'v3'
+});
 
 // Define the query type and its fields
 builder.queryType({
