@@ -1,3 +1,7 @@
+# Unmaintained
+
+This project is currently unmaintained. While it hasn't received updates for over 7 months, it remains fully functional. However, Nexirift is moving towards a unified authentication server using different technologies, eliminating our need for OpenID authentication. If you're interested in maintaining or contributing to this project, we welcome your involvement - please contact us at [maintain@nexirift.com](mailto:maintain@nexirift.com).
+
 # plugin-oidc-example
 
 An example [GraphQL Yoga](https://github.com/dotansimha/graphql-yoga) project to
